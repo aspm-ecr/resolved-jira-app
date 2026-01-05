@@ -1,0 +1,14 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: prod
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    steps:
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: jfa-cb-workflow
+          artifact-id: eb5e5d90-fe09-4780-ae7d-a68833c38233
+          target-environment: aspm-qa-test
