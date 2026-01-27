@@ -10,5 +10,5 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: jfa-cb-workflow
-          artifact-id: 1768f962-c060-41e7-a200-d366992b0904
+          artifact-id: a4bacbc4-f034-499b-a652-22f806606dc6
           target-environment: aspm-qa-test
