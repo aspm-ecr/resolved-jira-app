@@ -14,11 +14,11 @@ type Payload struct {
 const password = "super_secret"
 
 func hello(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	apiKey := "my-secret-key"
+	// apiKey := "my-secret-key"
 	name := p.ByName("name")
 	payload := Payload{
 		Message:  "Hello " + name,
-		Password: apiKey,
+		// Password: apiKey,
 	}
 
 	response, err := json.Marshal(payload)
